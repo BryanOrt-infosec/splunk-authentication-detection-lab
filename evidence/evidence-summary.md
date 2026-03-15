@@ -1,88 +1,44 @@
-\# Evidence Summary
+# Evidence Summary
 
+This document summarizes the supporting evidence collected during the **Splunk Authentication Detection Lab**.
 
+The evidence consists of authentication logs generated from simulated attacks and analyzed using Splunk.
 
-\## Evidence Collected
+---
 
+# Evidence Collected
 
+The following artifacts were collected during the investigation:
 
-This folder contains supporting evidence related to the Splunk authentication detection lab.
+| Evidence Type | Description |
+|---------------|-------------|
+| Splunk Search Interface | Screenshot of Splunk search dashboard |
+| Event ID 4625 Logs | Failed authentication attempts |
+| Event ID 4624 Logs | Successful login events |
+| Authentication Statistics | Failed login counts grouped by account |
+| Alert Status | Splunk alert state before attack simulation |
+| Password Spray Results | Authentication failures across multiple accounts |
+| Host Analysis | Detection results grouped by account and host |
+| Attack Simulation | Password spray attack executed using runas |
 
+---
 
+# Screenshots Included
 
-\### Evidence Types
+1. Splunk Search Interface  
+2. Failed Login Events (4625)  
+3. Successful Login Events (4624)  
+4. Failed Login Statistics by Account  
+5. Alert Status Before Attack  
+6. Password Spray Results Across Accounts  
+7. Password Spray Detection Statistics  
+8. Host and Account Analysis  
+9. Password Spray Command Execution
 
-\- Splunk screenshots
+---
 
-\- Authentication event searches
+# Purpose of Evidence
 
-\- Statistical detection results
+The collected evidence demonstrates how authentication attack simulations generate Windows Security logs that can be detected using SIEM monitoring.
 
-\- Password spray simulation command execution
-
-
-
-\---
-
-
-
-\## Screenshots Included
-
-
-
-1\. Splunk Search interface
-
-2\. Failed login events (Event ID 4625)
-
-3\. Successful login events (Event ID 4624)
-
-4\. Failed login statistics by account name
-
-5\. Alert view before password spray attack
-
-6\. Password spray results across multiple accounts
-
-7\. Sorted password spray statistics
-
-8\. Host-based password spray analysis
-
-9\. Command Prompt password spray simulation using `runas`
-
-
-
-\---
-
-
-
-\## Relevant Event IDs
-
-
-
-\- \*\*4624\*\* — Successful logon
-
-\- \*\*4625\*\* — Failed logon attempt
-
-
-
-\---
-
-
-
-\## Summary of Evidence
-
-
-
-The evidence collected in this lab demonstrates that:
-
-
-
-\- Splunk successfully ingested Windows Security logs
-
-\- Failed authentication attempts were detected and searchable
-
-\- Successful authentication events were also visible
-
-\- Password spray activity could be identified across multiple usernames
-
-\- SPL queries were effective in summarizing suspicious login patterns
-
+These artifacts support the findings documented in the investigation report.
